@@ -1,0 +1,181 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="17f5bb59-ae20-45fc-acec-98e85a1d4888" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Teatr Ma Przedstawienie</ID>
+  <Name>Teatr Ma Przedstawienie</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4b71d5c6-2306-469d-9a2d-cb90bf713a0a">
+    <DataSourceViewID>Teatr</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="85bf53ba-cedb-4fc8-a1d7-b3ab618dbb3c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ebee7a20-d928-4b34-926b-d59d6326a52b">
+      <ID>Id Teatr Ma Przedstawienie</ID>
+      <Name>Id Teatr Ma Przedstawienie</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba8e4bff-f51a-42f8-9ebc-a2cd7f9947ef">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43b6190a-e33e-4bb2-a75d-e36b8fd61a4a">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idTeatrMaPrzedstawienie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7ff9c580-cd3a-4a74-b134-c6b2ba4dd1d2">
+          <AttributeID>Id Teatr</AttributeID>
+          <Name>Id Teatr</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="77bf613d-f759-4217-a1cd-85c1463bd95f">
+          <AttributeID>Id Przedstawienie</AttributeID>
+          <Name>Id Przedstawienie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3f422d2-2772-408f-8cc3-158429d0e9ea">
+          <AttributeID>Id Data</AttributeID>
+          <Name>Id Data</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78a6094e-c38e-4cf6-b5f4-e5dad4dc8f18">
+          <AttributeID>Id Czas</AttributeID>
+          <Name>Id Czas</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="14998809-8cb1-4f8e-9634-9e13df101c1b">
+          <AttributeID>Id Śmieci</AttributeID>
+          <Name>Id Śmieci</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="98ec695c-3c2c-4dca-b66a-be5d107a9136">
+      <ID>Id Teatr</ID>
+      <Name>Id Teatr</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e9083f3-100b-4db0-a180-69a98cf3662d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="073a7e30-8e05-4518-aa45-cc321877febd">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idTeatr</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="03f341b4-1e59-4ecc-8033-27a8241c5235">
+      <ID>Id Przedstawienie</ID>
+      <Name>Id Przedstawienie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0574e230-ce26-4bf1-bb82-4c09a12287a3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5079aa8f-9199-4fcc-863e-0e8599dd66f5">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idPrzedstawienie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec048c45-fc6f-4962-9970-50babda986a8">
+      <ID>Id Data</ID>
+      <Name>Id Data</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d044e7e1-8ac7-496d-8ff5-b430d06ed0ed">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9192e8fc-59ab-4f25-973a-4d9702c1a9aa">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idData</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fc188a35-ecbe-4484-bc12-50e760e0cd02">
+      <ID>Id Czas</ID>
+      <Name>Id Czas</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7a3dcdb-f8bc-496a-892a-2b882a6bfaa5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73deb2dc-35e1-45e8-bf0d-e629a7ee8f65">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idCzas</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ebc8255-e25d-437c-91d0-8231ec6caa80">
+      <ID>Id Śmieci</ID>
+      <Name>Id Śmieci</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e57f5efc-4488-4183-9486-7231ec021da2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8eda644f-6300-4a6c-adb1-568338a2fe08">
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            <ColumnID>idŚmieci</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

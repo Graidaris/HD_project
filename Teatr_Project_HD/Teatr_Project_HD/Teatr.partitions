@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d404fead-5fcd-4b9e-8b14-ad8065f296f2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Teatr</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Bilet</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d4e12d83-4bc8-437d-bc65-d43b6ab8184c">
+          <ID>Bilet</ID>
+          <Name>Bilet</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e01a683f-b57e-45e6-8ac3-5c729eb0a25b">
+            <DataSourceViewID>Teatr</DataSourceViewID>
+            <TableID>dbo_Bilet</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Teatr Ma Przedstawienie</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="56f57603-2606-4599-8c97-5ed2e5a22adc">
+          <ID>Teatr Ma Przedstawienie</ID>
+          <Name>Teatr Ma Przedstawienie</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f1750526-39a0-476c-a90c-a75c4b41988d">
+            <DataSourceViewID>Teatr</DataSourceViewID>
+            <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Bycie Artysta</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3eb81856-5c14-4497-a731-b596b4571506">
+          <ID>Bycie Artysta</ID>
+          <Name>Bycie Artysta</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bfd1e762-5e73-43de-b0e3-1c90397db2e9">
+            <DataSourceViewID>Teatr</DataSourceViewID>
+            <TableID>dbo_BycieArtysta</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

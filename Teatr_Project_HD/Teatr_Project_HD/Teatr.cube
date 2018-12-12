@@ -1,0 +1,1030 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6dfbbbd9-fa6b-4849-aacb-da8fb0176c50" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Teatr</ID>
+  <Name>Teatr</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="46" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2703" scrolltop="8652" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="15981" y="13044" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Inne" left="12683" top="10674" logicalid="23" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Inne" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Bilet" left="2672" top="19654" logicalid="24" controlid="2" masterid="0" hint1="0" hint2="0" width="4366" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00000e110000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Bilet" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Sprzedawca" left="3355" top="24779" logicalid="25" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Sprzedawca" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TeatrMaPrzedstawienie" left="5420" top="6127" logicalid="26" controlid="4" masterid="0" hint1="0" hint2="0" width="4366" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00000e11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj />
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Artysta" left="18581" top="4279" logicalid="27" controlid="5" masterid="0" hint1="0" hint2="0" width="5450" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004a150000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Artysta" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Teatr" left="20" top="7264" logicalid="28" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Teatr" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Przedstawienie" left="12530" top="0" logicalid="29" controlid="7" masterid="0" hint1="0" hint2="0" width="3307" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000eb0c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Przedstawienie" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Śmieci" left="6015" top="1425" logicalid="30" controlid="8" masterid="0" hint1="0" hint2="0" width="3175" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000670c0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Śmieci" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Data" left="9438" top="19654" logicalid="31" controlid="9" masterid="0" hint1="0" hint2="0" width="3096" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000180c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Data" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Czas" left="13703" top="13929" logicalid="32" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Czas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="BycieArtysta" left="12186" top="5125" logicalid="33" controlid="11" masterid="0" hint1="0" hint2="0" width="3995" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00009b0f00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_BycieArtysta" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13784" top="7974" logicalid="34" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_BycieArtysta_Inne]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="11" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14183" y="10674" />
+              <point x="14183" y="8274" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4456" top="22079" logicalid="35" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Bilet_Sprzedawca]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4855" y="24779" />
+              <point x="4855" y="22379" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4555" top="10628" logicalid="36" controlid="14" masterid="0" hint1="0" hint2="0" width="2348" height="9326" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Bilet_TeatrMaPrzedstawienie]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="3" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6503" y="11127" />
+              <point x="6503" y="15390" />
+              <point x="4855" y="15390" />
+              <point x="4855" y="19654" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="8227" logicalid="37" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TeatrMaPrzedstawienie_Teatr]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="15" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="8626" />
+              <point x="4220" y="8626" />
+              <point x="4220" y="8627" />
+              <point x="5420" y="8627" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9486" top="963" logicalid="38" controlid="16" masterid="0" hint1="0" hint2="0" width="3344" height="6864" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TeatrMaPrzedstawienie_Przedstawienie]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="14" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12530" y="1362" />
+              <point x="11158" y="1362" />
+              <point x="11158" y="7527" />
+              <point x="9786" y="7527" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7853" top="10827" logicalid="39" controlid="17" masterid="0" hint1="0" hint2="0" width="3533" height="9327" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TeatrMaPrzedstawienie_Data]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="4" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10986" y="19654" />
+              <point x="10986" y="15391" />
+              <point x="8153" y="15391" />
+              <point x="8153" y="11127" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9486" top="8877" logicalid="40" controlid="18" masterid="0" hint1="0" hint2="0" width="4517" height="6391" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TeatrMaPrzedstawienie_Czas]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="4" sourceattachpoint="12" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13703" y="14868" />
+              <point x="10986" y="14868" />
+              <point x="10986" y="9177" />
+              <point x="9786" y="9177" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7203" top="3228" logicalid="41" controlid="19" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TeatrMaPrzedstawienie_Śmieci]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7602" y="3727" />
+              <point x="7602" y="4927" />
+              <point x="7603" y="4927" />
+              <point x="7603" y="6127" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="15881" top="6301" logicalid="42" controlid="20" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_BycieArtysta_Artysta]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="11" sourceattachpoint="26" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18581" y="6700" />
+              <point x="17381" y="6700" />
+              <point x="17381" y="6699" />
+              <point x="16181" y="6699" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13784" top="2226" logicalid="43" controlid="21" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_BycieArtysta_Przedstawienie]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="11" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14183" y="2725" />
+              <point x="14183" y="5125" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TeatrMaPrzedstawienie" left="5325" top="5189" logicalid="44" controlid="22" masterid="0" hint1="0" hint2="0" width="4939" height="5846" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00004b130000d6160000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TeatrMaPrzedstawienie" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2703</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>8652</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7a8d43e3-0f7e-4de7-80f1-7c512056778b">
+      <ID>Sprzedawca</ID>
+      <Name>Sprzedawca</Name>
+      <DimensionID>Sprzedawca</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8797b903-b925-433b-8a3f-e18d558fd66c">
+          <AttributeID>Id Sprzedawca</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5738204f-44da-42bb-b61f-a7ea02bb54a7">
+          <AttributeID>Imie Nazwisko</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5c5428cc-ac09-49cf-96fb-2a8d0f76e239">
+      <ID>Teatr Ma Przedstawienie</ID>
+      <Name>Teatr Ma Przedstawienie</Name>
+      <DimensionID>Teatr Ma Przedstawienie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="03594acf-62fc-4622-aadf-84b218c86584">
+          <AttributeID>Id Teatr Ma Przedstawienie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3865d1fb-b197-4be8-8c38-e8e91056165b">
+          <AttributeID>Id Teatr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2fe8b175-afe0-45de-8ca6-6a14e5d82250">
+          <AttributeID>Id Przedstawienie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26b751b5-940c-4296-b326-4dcb4e2d70ab">
+          <AttributeID>Id Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="db31fef5-8fd1-4d87-be2c-b8b15ea5d96e">
+          <AttributeID>Id Czas</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1bd419ef-f3a5-41a5-956a-6e13c1bc3d06">
+          <AttributeID>Id Śmieci</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="95dbdb27-f1fd-430f-8d29-1a721e0bf01d">
+      <ID>Numer Transakcji</ID>
+      <Name>Numer Transakcji</Name>
+      <DimensionID>Numer Transakcji</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="71bb4e2a-b619-42c3-9d41-12b4de04b98e">
+          <AttributeID>Numer Transakcji</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="07f1d378-a325-4fe0-b3f9-6ce0a39c2063">
+      <ID>Teatr</ID>
+      <Name>Teatr</Name>
+      <DimensionID>Teatr</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="42dea356-4c2e-490e-a5a0-c0dd229e3b6c">
+          <AttributeID>Id Teatr</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="300ec62f-1607-4e69-84ab-d3b42b5d3de5">
+          <AttributeID>Nazwa Teatru</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="48acd032-8f50-4782-8b58-31e45a7b7702">
+          <AttributeID>Miejscowość</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b046c0b2-9c62-4485-ad65-9b9042d0d455">
+          <AttributeID>Pojemność</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ddf6c55b-0129-48fb-b9a6-a2a1bd5ceeb6">
+      <ID>Przedstawienie</ID>
+      <Name>Przedstawienie</Name>
+      <DimensionID>Przedstawienie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5288b8e4-4d0f-4db0-aa33-0bf2fc230b5e">
+          <AttributeID>Id Przedstawienie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="99eda5c3-9ac9-4a6c-9d94-644d53738f19">
+          <AttributeID>Tytuł</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d43a0cd1-ea2d-4ab5-9625-d4cc813422d0">
+          <AttributeID>Gatunek</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d9e58a5-3103-4c7c-8fd3-7aa597992766">
+          <AttributeID>Gościnny</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9dc6c9a2-f66b-4798-a388-f33656ed648c">
+      <ID>Data</ID>
+      <Name>Data</Name>
+      <DimensionID>Data</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e7520719-2019-48cc-bd88-205a1164747f">
+          <AttributeID>Id Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0802eebb-6215-42c3-8c3c-a52898c6f1ab">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ec9c8ec-8038-4339-98bd-b0bb7c54e884">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b5bcc2d8-3eb4-4cb4-a9a8-7720c4b3b84d">
+          <AttributeID>Miesiąc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8988c4e1-ab28-4f14-944c-b30563701c74">
+          <AttributeID>Dzień Tygodnia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="72fac9f5-f68e-438b-8f9f-d394844945f3">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="8820026d-8c9a-464a-ad47-99637ce5d114">
+      <ID>Czas</ID>
+      <Name>Czas</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="840fac94-c1af-4cf3-b7fd-6b53a3815d2a">
+          <AttributeID>Id Czas</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="628b6b6c-e8cc-477b-a673-12554897e101">
+          <AttributeID>Godzina</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1c17ddaf-4d85-4a66-a7ce-6de505545df8">
+      <ID>Śmieci</ID>
+      <Name>Śmieci</Name>
+      <DimensionID>Śmieci</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6511e0ee-c8c9-4e68-8d81-60469899bd5f">
+          <AttributeID>Id Śmieci</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55c67dab-a43f-4136-808b-ab52653bf5c2">
+          <AttributeID>Stanowisko</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf6d8341-57de-4b13-aa0e-16c367fcb6f6">
+          <AttributeID>Forma Płatności</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a4c4457-d2ee-4059-ba7b-96c5e0737a8f">
+      <ID>Inne</ID>
+      <Name>Inne</Name>
+      <DimensionID>Inne</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="46f9ac2c-6bdb-4eee-a937-8fe5d7a84f28">
+          <AttributeID>Id Inne</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88688ff3-e6f4-4395-9b76-3e4c7898d3fa">
+          <AttributeID>Reżyser</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ebb38e6f-bded-4a43-b780-58dc6bf440d5">
+          <AttributeID>Aktor</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b45db034-bf3f-4725-b232-95f711cc7794">
+      <ID>Artysta</ID>
+      <Name>Artysta</Name>
+      <DimensionID>Artysta</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fe9eba94-290e-4507-92e9-81da5a696724">
+          <AttributeID>Id Artysta</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="74850860-f9ba-41d2-bda0-b1ff66e1a91c">
+          <AttributeID>Pesel</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="857ceb0e-0bf5-4792-80ab-dfc97f754e2c">
+          <AttributeID>Imie Nazwisko</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="faaa91f7-cfe6-4786-b2af-1d1f4933a563">
+          <AttributeID>Data Zwolnienia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7a6ee56-767a-43c4-8e84-ae3764de2397">
+          <AttributeID>Wynagrodzenie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81a477b2-e4e1-493d-bfe4-d0345d140402">
+          <AttributeID>Zatrudnienie Na Stanowisku</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="922e458c-fa20-4aed-870b-ced006932399">
+          <AttributeID>Data Urodzenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e69f70e-f32e-408b-952b-1733e5aadad4">
+          <AttributeID>Data Przyjęcia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d40ce289-56db-4240-9ac2-21ff2ac03e4c">
+          <AttributeID>Ocena</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="6cceaf2f-3975-4a2d-9e19-bc6a81265e7c">
+      <ID>Bilet</ID>
+      <Name>Bilet</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="019c8025-6934-48f0-9d82-e0b6ae23cd67">
+          <ID>Koszt</ID>
+          <Name>Koszt</Name>
+          <Source dwd:design-time-name="07cb9412-19bb-4fe8-a5b9-9d13865dc65c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d44eed66-b4b8-4599-966c-5a844916ff8d">
+              <TableID>dbo_Bilet</TableID>
+              <ColumnID>Koszt</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bd00e07e-2d3f-4e03-bf5f-78c689f08d0b">
+          <ID>Bilet Count</ID>
+          <Name>Bilet Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="8e956a68-0ee4-4299-9e55-4e239f7fa1f0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="14f418a7-986f-4b2f-8bee-7de29daa2fa8">
+              <TableID>dbo_Bilet</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="54b66e1d-078c-4683-9320-9106ae228df2">
+          <CubeDimensionID>Sprzedawca</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ca5c1a7-f06b-46be-baa7-49a5988dff18">
+              <AttributeID>Id Sprzedawca</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="49134fbd-e277-4678-8135-64282eb9e5cc">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b69dfd60-8c1f-4e83-8f7a-871bb14ffc9a">
+                    <TableID>dbo_Bilet</TableID>
+                    <ColumnID>idSprzedawca</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="50c5cd8d-19a8-4412-8791-6834e190858b">
+          <CubeDimensionID>Teatr Ma Przedstawienie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0e1d0bbf-8dc3-434a-bcb8-141e7704977d">
+              <AttributeID>Id Teatr Ma Przedstawienie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="da3dd207-b410-4fd7-bf7b-5e238d4eb480">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7144669-e068-4d42-ac50-a7dd496842a3">
+                    <TableID>dbo_Bilet</TableID>
+                    <ColumnID>idTeatrMaPrzedstawienie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="aadf6e22-6a44-4d7f-afb5-4f39aa82bbff">
+          <CubeDimensionID>Teatr</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2929d375-56a8-447f-848b-a244868ad6fb">
+              <AttributeID>Id Teatr</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Teatr Ma Przedstawienie</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Id Teatr</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a0bf5f4f-c908-4605-97a9-f304ee690b50">
+          <CubeDimensionID>Przedstawienie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="106d804e-ca0d-46b6-a627-2daaba8dff2e">
+              <AttributeID>Id Przedstawienie</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Teatr Ma Przedstawienie</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Id Przedstawienie</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="efa52ab3-3b0c-4c3f-9b38-ff91e972a149">
+          <CubeDimensionID>Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6d74f9eb-60f5-40da-8a55-b2c6b9e73c01">
+              <AttributeID>Id Data</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Teatr Ma Przedstawienie</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Id Data</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9153a4fa-84b2-42e7-ade4-0211c72bc70b">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c07c15f6-b982-4c57-a36d-2ee5e8d50cb9">
+              <AttributeID>Id Czas</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Teatr Ma Przedstawienie</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Id Czas</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0feee294-5dd8-4360-85a8-9d11b8a92013">
+          <CubeDimensionID>Śmieci</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fadedde-d957-4532-9c1f-7552af1e8442">
+              <AttributeID>Id Śmieci</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Teatr Ma Przedstawienie</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Id Śmieci</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b8ba30f3-9d41-470a-bfa4-2633021aa5b0">
+      <ID>Teatr Ma Przedstawienie</ID>
+      <Name>Teatr Ma Przedstawienie</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0948a1a4-c6f3-4436-8676-dba6e83b71c8">
+          <ID>Ilość</ID>
+          <Name>Ilość</Name>
+          <Source dwd:design-time-name="5dbd15db-2222-46c9-b436-89061f18e67f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c85b14b-2262-4e3d-8fce-c5f5eae71380">
+              <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+              <ColumnID>Ilość</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f87ce021-8ad7-47b5-89e2-95c30dac563e">
+          <ID>Zysk</ID>
+          <Name>Zysk</Name>
+          <Source dwd:design-time-name="21220367-bb48-4799-8f1e-3e5b278e35df">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0acdf06-83ba-4496-b4a0-5c037bdc6a48">
+              <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+              <ColumnID>Zysk</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d29aff80-d91c-4d71-9d3a-e2d9834cb20f">
+          <ID>Koszt - Teatr Ma Przedstawienie</ID>
+          <Name>Koszt - Teatr Ma Przedstawienie</Name>
+          <Source dwd:design-time-name="523d80a5-59aa-4675-b62a-1adaba9c1dc9">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6fc71e6a-9f42-417d-89fc-c7e896ffb49b">
+              <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+              <ColumnID>Koszt</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1ec6d8c8-bf10-499f-93c3-1a7bab731264">
+          <ID>Pojemność Teatru</ID>
+          <Name>Pojemność Teatru</Name>
+          <Source dwd:design-time-name="2c4291e4-684b-4eef-baca-f9159b88112a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="edb1151f-10bf-4fd4-a3e6-b950a3e92fa4">
+              <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+              <ColumnID>PojemnośćTeatru</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c53a31ad-cee3-42d0-b713-fd7ff1b450b2">
+          <ID>Teatr Ma Przedstawienie Count</ID>
+          <Name>Teatr Ma Przedstawienie Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ae7d2030-244b-434f-a6c3-ccd541e81d86">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="049dea88-31c3-4049-b607-e88feb8b0cd9">
+              <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9624b19b-ca15-44f8-8b52-870cb5410997">
+          <CubeDimensionID>Teatr</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc934997-13e3-4582-b739-dbce9ba589a6">
+              <AttributeID>Id Teatr</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8749e895-6393-411b-b153-cc6933aad9a5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="be47c876-2091-41fd-9184-52ec3d51c0c7">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idTeatr</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b71d51a7-1e4c-40e1-89fa-188f2f17f51d">
+          <CubeDimensionID>Przedstawienie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="53d97c07-9190-443f-9a5f-1b8cd040f2f6">
+              <AttributeID>Id Przedstawienie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="929e5598-4801-4715-8d61-5db9e17bcfca">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b03521e-2e04-4f26-bb1c-b1a27ef440b1">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idPrzedstawienie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1573148e-e12c-4b56-ac34-a0a2e7a9cd24">
+          <CubeDimensionID>Data</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1fa5ffd3-98d7-4cb0-809f-6367e05cd148">
+              <AttributeID>Id Data</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d06e9813-9487-4f66-94a0-db1564b0c798">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="271c2e0f-ae45-4383-ae94-25962c6a135e">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idData</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b4ccac99-3d73-4bfc-a820-2484fe5cc50a">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="27a3a50c-7270-4f58-9e3b-964c99ccd70a">
+              <AttributeID>Id Czas</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="44332dd9-cf1b-4f03-bfe9-9f07ae0a8057">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="95d09ff0-f21c-413d-9b23-4b1c0d866f52">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idCzas</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e35c497d-d1db-4c7d-8175-fe2d901c4460">
+          <CubeDimensionID>Śmieci</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ea1cf170-ba0d-4882-9f49-1122fe3c85d8">
+              <AttributeID>Id Śmieci</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="16e96793-157c-435a-b61d-5ea2ca17976d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d1c04719-a7b4-4b26-b673-01a55c6e5e6c">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idŚmieci</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="941f1087-1b43-48bc-bf19-20cbbc9b6a66">
+          <CubeDimensionID>Numer Transakcji</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="571c0180-91f1-429c-bedf-70ccfa6ab95f">
+              <AttributeID>Numer Transakcji</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb51aed4-29dd-4710-b171-76cc1a1ee06b">
+                  <DataType>WChar</DataType>
+                  <DataSize>6</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b6303605-b94c-471b-aa26-7207c9bd8d44">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>NumerTransakcji</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fe789263-8336-4031-aaf1-9ad737069926">
+          <CubeDimensionID>Teatr Ma Przedstawienie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83a5653e-4e52-4d95-8087-c1e34fce5371">
+              <AttributeID>Id Teatr Ma Przedstawienie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="150d13e2-807f-429c-950c-8893c3697e80">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc9adb98-0c03-42e3-a6e7-65c524dd7d3f">
+                    <TableID>dbo_TeatrMaPrzedstawienie</TableID>
+                    <ColumnID>idTeatrMaPrzedstawienie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a83d2dd2-3482-4700-9bfb-222a99f74893">
+      <ID>Bycie Artysta</ID>
+      <Name>Bycie Artysta</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="df5f18b8-17d7-42b1-83f0-ce61043addf3">
+          <ID>Wynagrodzenie Artysty</ID>
+          <Name>Wynagrodzenie Artysty</Name>
+          <Source dwd:design-time-name="2ab6d136-bcf7-48f0-ad06-7e3d93b07efd">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d9f59efe-417b-4ff4-9b12-dec5e9f2f48a">
+              <TableID>dbo_BycieArtysta</TableID>
+              <ColumnID>WynagrodzenieArtysty</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f4bf491f-5b9a-4b4e-9439-875143c7b846">
+          <ID>Bycie Artysta Count</ID>
+          <Name>Bycie Artysta Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="931f80be-cd7b-4129-b88d-04348270bd93">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="53feef36-d171-4897-86af-cf95e6ce5f8d">
+              <TableID>dbo_BycieArtysta</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4b3879a1-f062-455a-8b11-4af7612044ed">
+          <CubeDimensionID>Przedstawienie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d9b6d3df-2881-46ec-825d-70c83ea3634e">
+              <AttributeID>Id Przedstawienie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5cc04be2-3e5a-4a7d-beb6-e0fca0ba7e49">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e559a36f-5901-425a-98ec-afdae8f1248f">
+                    <TableID>dbo_BycieArtysta</TableID>
+                    <ColumnID>idPrzedstawienie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9a609bda-a6b2-44b6-bc5d-0171c9b17d05">
+          <CubeDimensionID>Inne</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8b951d09-1b25-4a76-acaf-5c9f41e500ba">
+              <AttributeID>Id Inne</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8e0f704b-b807-4100-bf32-65bcf3a7f81a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d914ce45-90f7-4b7c-bd3c-86978b6658a4">
+                    <TableID>dbo_BycieArtysta</TableID>
+                    <ColumnID>idInne</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2187c676-bcae-4319-91c4-7c40814570f6">
+          <CubeDimensionID>Artysta</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="479c3f3d-acc3-4b2b-83ec-255045d337c1">
+              <AttributeID>Id Artysta</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b87de619-2a24-4da6-a15f-13b62c3c05a2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="30f5c310-6c5c-4805-9eae-ad7f00f61a13">
+                    <TableID>dbo_BycieArtysta</TableID>
+                    <ColumnID>idArtysta</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9450f6b6-b06f-4713-aed8-46e52d994a75">
+    <DataSourceViewID>Teatr</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="98853b6a-e2f6-4413-96a0-5452c8d33a02">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

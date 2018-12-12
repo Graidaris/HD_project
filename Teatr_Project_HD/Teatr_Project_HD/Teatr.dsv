@@ -1,0 +1,364 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0e9d1c26-2515-403b-b381-02168ba9e7a6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Teatr</ID>
+  <Name>Teatr</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Teatr</DataSourceID>
+  <Schema>
+    <xs:schema id="Teatr" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Teatr" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="64156f15-7d95-4b00-9c8f-87a802f0f1bc">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Artysta" msprop:design-time-name="6a2a4f8a-3ed5-4ead-876a-d129a755ae1d" msprop:DbTableName="Artysta" msprop:FriendlyName="Artysta" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idArtysta" msprop:design-time-name="7194e72c-2e22-455a-adbf-bc1d72826a41" msprop:DbColumnName="idArtysta" msprop:FriendlyName="idArtysta" type="xs:int" />
+                  <xs:element name="Pesel" msprop:design-time-name="cf0be28f-52f6-4d0d-883f-69d9b6d03c29" msprop:DbColumnName="Pesel" msprop:FriendlyName="Pesel">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ImieNazwisko" msprop:design-time-name="b7134478-35a6-47e6-a0bf-fde7ec3abcc7" msprop:DbColumnName="ImieNazwisko" msprop:FriendlyName="ImieNazwisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataZwolnienia" msprop:design-time-name="d1fd7edd-8385-40f2-ad14-56e5cb144686" msprop:DbColumnName="DataZwolnienia" msprop:FriendlyName="DataZwolnienia" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Wynagrodzenie" msprop:design-time-name="94f702f6-2f95-45cb-8cca-00a10c73625c" msprop:DbColumnName="Wynagrodzenie" msprop:FriendlyName="Wynagrodzenie" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZatrudnienieNaStanowisku" msprop:design-time-name="5714187e-8567-4345-af3d-ba717b2eb003" msprop:DbColumnName="ZatrudnienieNaStanowisku" msprop:FriendlyName="ZatrudnienieNaStanowisku">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataUrodzenia" msprop:design-time-name="5aef2add-7080-4d78-98c4-cccae38ef13b" msprop:DbColumnName="DataUrodzenia" msprop:FriendlyName="DataUrodzenia" type="xs:dateTime" />
+                  <xs:element name="DataPrzyjęcia" msprop:design-time-name="26aaf898-951d-4783-8261-f017c3527ea0" msprop:DbColumnName="DataPrzyjęcia" msprop:FriendlyName="DataPrzyjęcia" type="xs:dateTime" />
+                  <xs:element name="Ocena" msprop:design-time-name="1249d490-5cd6-4d74-aa4a-66587e3aaa50" msprop:DbColumnName="Ocena" msprop:FriendlyName="Ocena" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="14" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Bilet" msprop:design-time-name="09e6544d-2ba3-4e7e-9e95-f2827a73890f" msprop:DbTableName="Bilet" msprop:FriendlyName="Bilet" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idBilet" msprop:design-time-name="6974b019-b920-4395-8852-66600af5877c" msprop:DbColumnName="idBilet" msprop:FriendlyName="idBilet" type="xs:int" />
+                  <xs:element name="idTeatrMaPrzedstawienie" msprop:design-time-name="5ea1a927-f463-422d-ba2e-7aa516d596be" msprop:DbColumnName="idTeatrMaPrzedstawienie" msprop:FriendlyName="idTeatrMaPrzedstawienie" type="xs:int" />
+                  <xs:element name="idSprzedawca" msprop:design-time-name="3651274d-cc26-43bb-9ef8-611d9cba87ee" msprop:DbColumnName="idSprzedawca" msprop:FriendlyName="idSprzedawca" type="xs:int" />
+                  <xs:element name="Koszt" msprop:design-time-name="ea670efd-6b57-4d5c-ad4a-51d10d764e41" msprop:DbColumnName="Koszt" msprop:FriendlyName="Koszt" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_BycieArtysta" msprop:design-time-name="a9058ee5-d1bb-414c-aa87-472e10207a49" msprop:DbTableName="BycieArtysta" msprop:FriendlyName="BycieArtysta" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idBycieArtysta" msprop:design-time-name="b850a86d-6e59-4822-ade0-34078464a7b3" msprop:DbColumnName="idBycieArtysta" msprop:FriendlyName="idBycieArtysta" type="xs:int" />
+                  <xs:element name="idPrzedstawienie" msprop:design-time-name="55f2e0b1-ee93-4921-8a10-1a08b0a2bc7e" msprop:DbColumnName="idPrzedstawienie" msprop:FriendlyName="idPrzedstawienie" type="xs:int" />
+                  <xs:element name="idArtysta" msprop:design-time-name="f64324eb-ccf7-488a-b1cb-236fc701c817" msprop:DbColumnName="idArtysta" msprop:FriendlyName="idArtysta" type="xs:int" />
+                  <xs:element name="idInne" msprop:design-time-name="205b69c6-f675-41a2-a26d-04fbbff1eda0" msprop:DbColumnName="idInne" msprop:FriendlyName="idInne" type="xs:int" />
+                  <xs:element name="WynagrodzenieArtysty" msprop:design-time-name="9cb2a307-5a76-443e-b756-dbf1d1decd27" msprop:DbColumnName="WynagrodzenieArtysty" msprop:FriendlyName="WynagrodzenieArtysty" type="xs:double" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Czas" msprop:design-time-name="f9febdcb-4279-45d1-bcfa-6480968797af" msprop:DbTableName="Czas" msprop:FriendlyName="Czas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idCzas" msprop:design-time-name="b973252a-bacf-4031-ba54-7dddf5a6dbf8" msprop:DbColumnName="idCzas" msprop:FriendlyName="idCzas" type="xs:int" />
+                  <xs:element name="Godzina" msprop:design-time-name="70265673-2da9-457a-97ae-4f1bbd4a488e" msprop:DbColumnName="Godzina" msprop:FriendlyName="Godzina" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Data" msprop:design-time-name="8b1b6d02-f629-4338-adab-94eadacdf954" msprop:DbTableName="Data" msprop:FriendlyName="Data" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idData" msprop:design-time-name="dde5152f-e306-40a4-af5d-5c72b94ef4d0" msprop:DbColumnName="idData" msprop:FriendlyName="idData" type="xs:int" />
+                  <xs:element name="Data" msprop:design-time-name="e79cdb59-11b4-4173-a1e9-056bedc033b7" msprop:DbColumnName="Data" msprop:FriendlyName="Data" type="xs:dateTime" />
+                  <xs:element name="Rok" msprop:design-time-name="b6561b33-31e6-41c3-8eed-80638834901a" msprop:DbColumnName="Rok" msprop:FriendlyName="Rok" type="xs:int" />
+                  <xs:element name="Miesiąc" msprop:design-time-name="c93cf9ae-18a1-4287-bce9-ff4e0c3313dd" msprop:DbColumnName="Miesiąc" msprop:FriendlyName="Miesiąc" type="xs:int" />
+                  <xs:element name="DzieńTygodnia" msprop:design-time-name="6416d973-ddef-43e4-aeb6-619e9d7e8d06" msprop:DbColumnName="DzieńTygodnia" msprop:FriendlyName="DzieńTygodnia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Inne" msprop:design-time-name="ec08a9ec-69ec-49b1-b8d0-3f62d173ad20" msprop:DbTableName="Inne" msprop:FriendlyName="Inne" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idInne" msprop:design-time-name="9dec41f1-9614-44ca-b5a4-6d577e788861" msprop:DbColumnName="idInne" msprop:FriendlyName="idInne" type="xs:int" />
+                  <xs:element name="Reżyser" msprop:design-time-name="c5e60b49-a408-4cbd-a125-bf6686caceac" msprop:DbColumnName="Reżyser" msprop:FriendlyName="Reżyser">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Aktor" msprop:design-time-name="360808a1-10b7-4ea3-9555-90fce1423a2b" msprop:DbColumnName="Aktor" msprop:FriendlyName="Aktor">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Przedstawienie" msprop:design-time-name="94fb03d7-eabd-496c-a635-ed019d7bc5f7" msprop:DbTableName="Przedstawienie" msprop:FriendlyName="Przedstawienie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idPrzedstawienie" msprop:design-time-name="6f543ebb-4c44-485b-b7a9-652cec1a34fa" msprop:DbColumnName="idPrzedstawienie" msprop:FriendlyName="idPrzedstawienie" type="xs:int" />
+                  <xs:element name="Tytuł" msprop:design-time-name="e8a12668-b148-4ee1-b122-f883e057ad99" msprop:DbColumnName="Tytuł" msprop:FriendlyName="Tytuł">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gatunek" msprop:design-time-name="d64c7415-b278-4e34-a5f2-3d7f30576401" msprop:DbColumnName="Gatunek" msprop:FriendlyName="Gatunek">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gościnny" msprop:design-time-name="40c1a3fb-0505-4130-a0f2-3d6910365d0f" msprop:DbColumnName="Gościnny" msprop:FriendlyName="Gościnny">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Sprzedawca" msprop:design-time-name="6634eb77-922c-4d2e-ae3e-6163349d0d75" msprop:DbTableName="Sprzedawca" msprop:FriendlyName="Sprzedawca" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idSprzedawca" msprop:design-time-name="9aeab2eb-dbd6-40bd-8b2d-8be8380971fb" msprop:DbColumnName="idSprzedawca" msprop:FriendlyName="idSprzedawca" type="xs:int" />
+                  <xs:element name="ImieNazwisko" msprop:design-time-name="ee8e6689-ff0c-418a-8ee0-463988e4301a" msprop:DbColumnName="ImieNazwisko" msprop:FriendlyName="ImieNazwisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Śmieci" msprop:design-time-name="20bc7510-4bd2-41f4-9bc0-f24f6531fc4e" msprop:DbTableName="Śmieci" msprop:FriendlyName="Śmieci" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idŚmieci" msprop:design-time-name="91e7c9f6-de75-4efc-80cf-c5c5ca86bcdf" msprop:DbColumnName="idŚmieci" msprop:FriendlyName="idŚmieci" type="xs:int" />
+                  <xs:element name="Stanowisko" msprop:design-time-name="f6f187b6-f12f-4fd0-a3ec-f67b71242502" msprop:DbColumnName="Stanowisko" msprop:FriendlyName="Stanowisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FormaPłatności" msprop:design-time-name="09a8a02f-410f-4e01-83b7-ce896df1a605" msprop:DbColumnName="FormaPłatności" msprop:FriendlyName="FormaPłatności">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Teatr" msprop:design-time-name="8e72049b-e2c4-41d6-a51c-74dd189c8d31" msprop:DbTableName="Teatr" msprop:FriendlyName="Teatr" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTeatr" msprop:design-time-name="8883408e-4abd-4a49-9e0d-c0ccd721038b" msprop:DbColumnName="idTeatr" msprop:FriendlyName="idTeatr" type="xs:int" />
+                  <xs:element name="NazwaTeatru" msprop:design-time-name="ad69480a-efef-48e8-9fea-2094e9b05fb0" msprop:DbColumnName="NazwaTeatru" msprop:FriendlyName="NazwaTeatru">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Miejscowość" msprop:design-time-name="fbf2878e-fe11-4536-b8aa-df61ef464c3a" msprop:DbColumnName="Miejscowość" msprop:FriendlyName="Miejscowość">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Pojemność" msprop:design-time-name="3a8af97b-3ba6-4057-bcbc-37768c71857b" msprop:DbColumnName="Pojemność" msprop:FriendlyName="Pojemność">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TeatrMaPrzedstawienie" msprop:design-time-name="fe403edd-62f2-4d12-90d0-46e14b24eff5" msprop:DbTableName="TeatrMaPrzedstawienie" msprop:FriendlyName="TeatrMaPrzedstawienie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="idTeatrMaPrzedstawienie" msprop:design-time-name="be05ef1d-5518-4110-af18-31950bae4d43" msprop:DbColumnName="idTeatrMaPrzedstawienie" msprop:FriendlyName="idTeatrMaPrzedstawienie" type="xs:int" />
+                  <xs:element name="Ilość" msprop:design-time-name="f2471742-5bb5-4796-94c2-59d7b3fcd917" msprop:DbColumnName="Ilość" msprop:FriendlyName="Ilość" type="xs:int" />
+                  <xs:element name="Zysk" msprop:design-time-name="d915108b-3c71-4e5d-886f-eae1aef0b600" msprop:DbColumnName="Zysk" msprop:FriendlyName="Zysk" type="xs:double" />
+                  <xs:element name="Koszt" msprop:design-time-name="7fca13f0-8842-4849-87f2-e4a2afa04fcc" msprop:DbColumnName="Koszt" msprop:FriendlyName="Koszt" type="xs:double" />
+                  <xs:element name="idPrzedstawienie" msprop:design-time-name="e37877de-7ca3-43b3-8ac1-4315006e5185" msprop:DbColumnName="idPrzedstawienie" msprop:FriendlyName="idPrzedstawienie" type="xs:int" />
+                  <xs:element name="idTeatr" msprop:design-time-name="873ad2c9-ccc2-4f19-bb9b-6b9ef48bbdaf" msprop:DbColumnName="idTeatr" msprop:FriendlyName="idTeatr" type="xs:int" />
+                  <xs:element name="idCzas" msprop:design-time-name="d60253f7-2608-4377-9038-4422f7801511" msprop:DbColumnName="idCzas" msprop:FriendlyName="idCzas" type="xs:int" />
+                  <xs:element name="idData" msprop:design-time-name="420ae44f-fdff-4639-ae79-5b908625dcf7" msprop:DbColumnName="idData" msprop:FriendlyName="idData" type="xs:int" />
+                  <xs:element name="idŚmieci" msprop:design-time-name="18d32975-fe48-4148-bb6f-e4e30398988f" msprop:DbColumnName="idŚmieci" msprop:FriendlyName="idŚmieci" type="xs:int" />
+                  <xs:element name="PojemnośćTeatru" msprop:design-time-name="f0ead1b1-9ea4-4a72-b185-217d6eebafa1" msprop:DbColumnName="PojemnośćTeatru" msprop:FriendlyName="PojemnośćTeatru" type="xs:int" />
+                  <xs:element name="NumerTransakcji" msprop:design-time-name="1bd17adb-9cdf-4a82-9056-b45dbccde0fc" msprop:DbColumnName="NumerTransakcji" msprop:FriendlyName="NumerTransakcji">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Artysta" />
+          <xs:field xpath="idArtysta" />
+        </xs:unique>
+        <xs:unique name="dbo_Bilet_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Bilet" />
+          <xs:field xpath="idBilet" />
+        </xs:unique>
+        <xs:unique name="dbo_BycieArtysta_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_BycieArtysta" />
+          <xs:field xpath="idBycieArtysta" />
+        </xs:unique>
+        <xs:unique name="dbo_Czas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Czas" />
+          <xs:field xpath="idCzas" />
+        </xs:unique>
+        <xs:unique name="dbo_Data_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="idData" />
+        </xs:unique>
+        <xs:unique name="dbo_Inne_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Inne" />
+          <xs:field xpath="idInne" />
+        </xs:unique>
+        <xs:unique name="dbo_Przedstawienie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Przedstawienie" />
+          <xs:field xpath="idPrzedstawienie" />
+        </xs:unique>
+        <xs:unique name="dbo_Sprzedawca_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Sprzedawca" />
+          <xs:field xpath="idSprzedawca" />
+        </xs:unique>
+        <xs:unique name="dbo_Śmieci_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Śmieci" />
+          <xs:field xpath="idŚmieci" />
+        </xs:unique>
+        <xs:unique name="dbo_Teatr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Teatr" />
+          <xs:field xpath="idTeatr" />
+        </xs:unique>
+        <xs:unique name="dbo_TeatrMaPrzedstawienie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idTeatrMaPrzedstawienie" />
+        </xs:unique>
+        <xs:keyref name="FK_TeatrMaPrzedstawienie_Śmieci" refer="dbo_Śmieci_Constraint1">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idŚmieci" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeatrMaPrzedstawienie_Czas" refer="dbo_Czas_Constraint1">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idCzas" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeatrMaPrzedstawienie_Data" refer="dbo_Data_Constraint1">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idData" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeatrMaPrzedstawienie_Przedstawienie" refer="dbo_Przedstawienie_Constraint1">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idPrzedstawienie" />
+        </xs:keyref>
+        <xs:keyref name="FK_TeatrMaPrzedstawienie_Teatr" refer="dbo_Teatr_Constraint1">
+          <xs:selector xpath=".//dbo_TeatrMaPrzedstawienie" />
+          <xs:field xpath="idTeatr" />
+        </xs:keyref>
+        <xs:keyref name="FK_BycieArtysta_Artysta" refer="Constraint1">
+          <xs:selector xpath=".//dbo_BycieArtysta" />
+          <xs:field xpath="idArtysta" />
+        </xs:keyref>
+        <xs:keyref name="FK_BycieArtysta_Inne" refer="dbo_Inne_Constraint1">
+          <xs:selector xpath=".//dbo_BycieArtysta" />
+          <xs:field xpath="idInne" />
+        </xs:keyref>
+        <xs:keyref name="FK_BycieArtysta_Przedstawienie" refer="dbo_Przedstawienie_Constraint1">
+          <xs:selector xpath=".//dbo_BycieArtysta" />
+          <xs:field xpath="idPrzedstawienie" />
+        </xs:keyref>
+        <xs:keyref name="FK_Bilet_TeatrMaPrzedstawienie" refer="dbo_TeatrMaPrzedstawienie_Constraint1">
+          <xs:selector xpath=".//dbo_Bilet" />
+          <xs:field xpath="idTeatrMaPrzedstawienie" />
+        </xs:keyref>
+        <xs:keyref name="FK_Bilet_Sprzedawca" refer="dbo_Sprzedawca_Constraint1">
+          <xs:selector xpath=".//dbo_Bilet" />
+          <xs:field xpath="idSprzedawca" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Teatr xmlns="" />
+  </Schema>
+</DataSourceView>

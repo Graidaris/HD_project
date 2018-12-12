@@ -1,0 +1,259 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3c24c872-cc09-49f9-9354-db31879dc300" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Artysta</ID>
+  <Name>Artysta</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1911" scrolltop="-4101" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8467" y="13044" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Artysta" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4604" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000fc110000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Artysta" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1911</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4101</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8a821307-a846-4db1-b345-b86f28745a29">
+    <DataSourceViewID>Teatr</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="00c51694-7acc-439e-ad66-11c5c1d4bbf6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ad2cc31d-a7ee-4f6a-8b9b-ccf64d5e7b1c">
+      <ID>Id Artysta</ID>
+      <Name>Id Artysta</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="448413e0-c83c-461f-81da-dac1c22cf4f4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e015724c-5641-44d3-a23d-aa9106fcc438">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>idArtysta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ca142211-f67f-4ecd-8531-ed06068236b1">
+          <AttributeID>Pesel</AttributeID>
+          <Name>Pesel</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53f7c2cc-c8fb-488b-a852-ae764fa89246">
+          <AttributeID>Imie Nazwisko</AttributeID>
+          <Name>Imie Nazwisko</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9a3b97a-63c6-45d6-8f28-0c06529c1462">
+          <AttributeID>Data Zwolnienia</AttributeID>
+          <Name>Data Zwolnienia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="49cd092f-ba44-44d3-89f2-d85eb8ec95cb">
+          <AttributeID>Wynagrodzenie</AttributeID>
+          <Name>Wynagrodzenie</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="812b6538-23b1-4a79-b6aa-67d6fa3a7708">
+          <AttributeID>Zatrudnienie Na Stanowisku</AttributeID>
+          <Name>Zatrudnienie Na Stanowisku</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9a7e1a9b-bd01-4496-8364-77829192ddab">
+          <AttributeID>Data Urodzenia</AttributeID>
+          <Name>Data Urodzenia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38af36ab-14dd-42ec-86a4-8f8744543b67">
+          <AttributeID>Data Przyjęcia</AttributeID>
+          <Name>Data Przyjęcia</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e75a6965-384d-41eb-8b73-f4bfa0b51426">
+          <AttributeID>Ocena</AttributeID>
+          <Name>Ocena</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ae76f668-b147-4d3d-be0f-990f609a6fd6">
+      <ID>Pesel</ID>
+      <Name>Pesel</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d7d84a2-3979-436b-8e04-ff5ea6131e6d">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8ebf578-398e-4b3a-9671-01cb15992887">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>Pesel</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="18492549-04ea-4b25-9aa1-2a98233f6a5b">
+      <ID>Imie Nazwisko</ID>
+      <Name>Imie Nazwisko</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05a9d362-1de4-4f63-8a12-b4dc2abc9598">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a866c936-a973-49ad-8654-e43cf9d439f6">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>ImieNazwisko</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="547a72a5-8401-429e-a570-c82f1ebf31b8">
+      <ID>Data Zwolnienia</ID>
+      <Name>Data Zwolnienia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8741befe-c441-47fb-9b68-7e2b0d065cba">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="712abe68-6e38-4902-ac7e-6cd4d131e833">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>DataZwolnienia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8515797b-7534-49d3-b5ef-0bf60c68cd1e">
+      <ID>Wynagrodzenie</ID>
+      <Name>Wynagrodzenie</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54f9b903-3cc3-4bea-b367-6271bf2a02d3">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8697a255-b4ca-4914-b31e-d758701c142e">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>Wynagrodzenie</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6013bf58-e47a-4f5a-b1bf-8038dbc5ad8b">
+      <ID>Zatrudnienie Na Stanowisku</ID>
+      <Name>Zatrudnienie Na Stanowisku</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b49fe77-107d-4a78-ad87-788226508657">
+          <DataType>WChar</DataType>
+          <DataSize>7</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="915b8380-b7c3-40da-a7fe-5be34cd93128">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>ZatrudnienieNaStanowisku</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe708861-2491-4ed5-a395-3cb246599c6a">
+      <ID>Data Urodzenia</ID>
+      <Name>Data Urodzenia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e8dc6b3d-22c6-4f01-a520-a09c6d4aa32c">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05c46441-42a0-44e6-93c1-ee95061fd2e3">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>DataUrodzenia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6e3f9042-5201-43d1-b3e3-29f991fe0fae">
+      <ID>Data Przyjęcia</ID>
+      <Name>Data Przyjęcia</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f6a933b-bf5d-4780-8d84-262bb23c4fa2">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7fb63bf-d2c3-486f-afc4-ead8565f91c7">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>DataPrzyjęcia</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e36fcda6-aa49-4503-82a7-953cb5d0e144">
+      <ID>Ocena</ID>
+      <Name>Ocena</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="538f9083-06a8-46e0-b96d-b09466786aa5">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fdcb533-f515-4d5d-beb0-9c87ea8462e3">
+            <TableID>dbo_Artysta</TableID>
+            <ColumnID>Ocena</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

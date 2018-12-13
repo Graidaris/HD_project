@@ -1,0 +1,11 @@
+drop table Bilet;
+drop table Teatr_ma_Przedstawienie;
+drop table Sprzedawca;
+drop table Smieci;
+drop table Data;
+drop table Czas;
+drop table Teatr;
+drop table BycieArtysta;
+drop table Przedstawienie;
+drop table Inne;
+drop table Artysta;

@@ -1,0 +1,11 @@
+﻿DELETE FROM Bilet
+DELETE FROM Teatr_ma_Przedstawienie
+DELETE FROM BycieArtysta
+DELETE FROM Przedstawienie
+DELETE FROM Teatr
+DELETE FROM Sprzedawca
+DELETE FROM Inne
+DELETE FROM Smieci
+DELETE FROM Artysta
+DELETE FROM Czas
+DELETE FROM Data

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{2B40271A-38CF-4190-88D2-5E8A0F497A91}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{2DB6AEDA-1936-4B3A-ADC2-E22F3A342AA4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,6 +40,150 @@
   </DTS:PackageParameters>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Teatr ma przedstawienie"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8354698A-321B-47DB-8910-9464533CC515}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Teatr ma przedstawienie"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Teatr ma przedstawienie\Wyciagniecie dat"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Wyciagniecie dat"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Przedstawienie]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Connections[OleDbConnection]"
+                  connectionManagerID="{4EB2CEEB-9C92-417B-8A37-7E537B32990D}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.teatrManager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].Columns[Data]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                      lineageId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].Columns[Data]"
+                      name="Data"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[IDPrzedstawienie]"
+                      dataType="wstr"
+                      length="20"
+                      name="IDPrzedstawienie" />
+                    <externalMetadataColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[Tytul]"
+                      dataType="wstr"
+                      length="30"
+                      name="Tytul" />
+                    <externalMetadataColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[Gatunek]"
+                      dataType="wstr"
+                      length="45"
+                      name="Gatunek" />
+                    <externalMetadataColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[Goscinny]"
+                      dataType="wstr"
+                      length="3"
+                      name="Goscinny" />
+                    <externalMetadataColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                      dataType="dbDate"
+                      name="Data" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[Data]"
+                      dataType="dbDate"
+                      lineageId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[Data]"
+                      name="Data" />
+                    <outputColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Teatr ma przedstawienie\Wyciagniecie dat.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Wprowadzenie artystow"
       DTS:CreationName="Microsoft.Pipeline"
@@ -5968,21 +6112,6 @@ where [refTable].[IDPrzedstawienie] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Wprowadzenie Teatr ma przedstawienie"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{33A8310E-0C66-4189-8D49-E11BB966080B}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Wprowadzenie Teatr ma przedstawienie"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Wprowadzenie teatrow"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -6420,22 +6549,6 @@ where [refTable].[IDPrzedstawienie] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Wprowadzenie Bycie artysta" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{CD409E64-71A6-4737-80C0-4CFE77B45489}"
-      DTS:From="Package\Wprowadzenie przedstawienia"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Wprowadzenie Teatr ma przedstawienie" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{80A0B7E5-327F-46A9-A601-B4B6F33BFEA4}"
-      DTS:From="Package\Wprowadzenie teatrow"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Wprowadzenie Teatr ma przedstawienie" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -6448,57 +6561,41 @@ where [refTable].[IDPrzedstawienie] = ?</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="192,42"
           Id="Package\Wprowadzenie artystow"
-          TopLeft="131,104" />
+          TopLeft="8,105" />
         <NodeLayout
           Size="211,42"
           Id="Package\Wprowadzenie Bycie artysta"
-          TopLeft="267,265" />
+          TopLeft="36,256" />
         <NodeLayout
           Size="221,42"
           Id="Package\Wprowadzenie przedstawienia"
-          TopLeft="368,107" />
+          TopLeft="120,25" />
         <NodeLayout
           Size="214,42"
           Id="Package\Wprowadzenie sprzedawcow"
-          TopLeft="1,255" />
-        <NodeLayout
-          Size="267,42"
-          Id="Package\Wprowadzenie Teatr ma przedstawienie"
-          TopLeft="517,262" />
+          TopLeft="468,107" />
         <NodeLayout
           Size="187,42"
           Id="Package\Wprowadzenie teatrow"
-          TopLeft="647,113" />
+          TopLeft="267,101" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="227,146">
+          TopLeft="105.833333333333,147">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="145.5,119"
+              EndConnector="0,109"
               Start="0,0"
-              End="145.5,111.5">
+              End="0,101.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,55.5"
-                    Point2="0,59.5"
-                    Point3="4,59.5" />
-                  <mssgle:LineSegment
-                    End="141.5,59.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="141.5,59.5"
-                    Point2="145.5,59.5"
-                    Point3="145.5,63.5" />
-                  <mssgle:LineSegment
-                    End="145.5,111.5" />
+                    End="0,101.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6509,30 +6606,30 @@ where [refTable].[IDPrzedstawienie] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="478.5,149">
+          TopLeft="230.5,67">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-72.1666666666667,116"
+              EndConnector="-55.1666666666667,189"
               Start="0,0"
-              End="-72.1666666666667,108.5">
+              End="-55.1666666666667,181.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.0761994355597" />
+                    End="0,108.546566321731" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,65.0761994355597"
-                    Point2="0,69.0761994355597"
-                    Point3="-4,69.0761994355597" />
+                    Point1="0,108.546566321731"
+                    Point2="0,112.546566321731"
+                    Point3="-4,112.546566321731" />
                   <mssgle:LineSegment
-                    End="-68.1666666666667,69.0761994355597" />
+                    End="-51.1666666666667,112.546566321731" />
                   <mssgle:CubicBezierSegment
-                    Point1="-68.1666666666667,69.0761994355597"
-                    Point2="-72.1666666666667,69.0761994355597"
-                    Point3="-72.1666666666667,73.0761994355597" />
+                    Point1="-51.1666666666667,112.546566321731"
+                    Point2="-55.1666666666667,112.546566321731"
+                    Point3="-55.1666666666667,116.546566321731" />
                   <mssgle:LineSegment
-                    End="-72.1666666666667,108.5" />
+                    End="-55.1666666666667,181.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6541,74 +6638,10 @@ where [refTable].[IDPrzedstawienie] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="514,149">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="93.3333333333334,113"
-              Start="0,0"
-              End="93.3333333333334,105.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5866578864011" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,52.5866578864011"
-                    Point2="0,56.5866578864011"
-                    Point3="4,56.5866578864011" />
-                  <mssgle:LineSegment
-                    End="89.3333333333334,56.5866578864011" />
-                  <mssgle:CubicBezierSegment
-                    Point1="89.3333333333334,56.5866578864011"
-                    Point2="93.3333333333334,56.5866578864011"
-                    Point3="93.3333333333334,60.5866578864011" />
-                  <mssgle:LineSegment
-                    End="93.3333333333334,105.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="740.5,155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-46.8333333333334,107"
-              Start="0,0"
-              End="-46.8333333333334,99.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,59.8175725986597" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,59.8175725986597"
-                    Point2="0,63.8175725986597"
-                    Point3="-4,63.8175725986597" />
-                  <mssgle:LineSegment
-                    End="-42.8333333333334,63.8175725986597" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-42.8333333333334,63.8175725986597"
-                    Point2="-46.8333333333334,63.8175725986597"
-                    Point3="-46.8333333333334,67.8175725986597" />
-                  <mssgle:LineSegment
-                    End="-46.8333333333334,99.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Teatr ma przedstawienie"
+          TopLeft="226,354" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -7134,77 +7167,77 @@ where [refTable].[IDPrzedstawienie] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="120,42"
-          Id="Package\Wprowadzenie Bycie artysta\Multicast"
-          TopLeft="293,359" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Wprowadzenie Bycie artysta\przedstawienie"
-          TopLeft="194,716" />
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Wprowadzenie Bycie artysta\Rezyser"
-          TopLeft="203,462" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Wprowadzenie Bycie artysta\Lookup"
-          TopLeft="106,165" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Wprowadzenie Bycie artysta\Sort"
-          TopLeft="310,264" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Wprowadzenie Bycie artysta\Pobrac wynagrodzenie"
-          TopLeft="421,729" />
-        <NodeLayout
-          Size="127,42"
-          Id="Package\Wprowadzenie Bycie artysta\Autorstwo"
-          TopLeft="302,52" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Wprowadzenie Bycie artysta\Artysta HD"
-          TopLeft="194,798" />
+          Size="140,42"
+          Id="Package\Wprowadzenie Bycie artysta\Bycie Artysta"
+          TopLeft="262,1086" />
         <NodeLayout
           Size="122,42"
           Id="Package\Wprowadzenie Bycie artysta\Lookup 1"
           TopLeft="306,167" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie Bycie artysta\Sort 1"
-          TopLeft="125,266" />
+          Size="116,42"
+          Id="Package\Wprowadzenie Bycie artysta\Rezyser"
+          TopLeft="203,462" />
         <NodeLayout
-          Size="151,42"
-          Id="Package\Wprowadzenie Bycie artysta\Wynagrodzenie"
-          TopLeft="290,897" />
+          Size="120,42"
+          Id="Package\Wprowadzenie Bycie artysta\Multicast"
+          TopLeft="293,359" />
         <NodeLayout
-          Size="122,42"
-          Id="Package\Wprowadzenie Bycie artysta\Lookup 5"
-          TopLeft="302,987" />
-        <NodeLayout
-          Size="102,42"
-          Id="Package\Wprowadzenie Bycie artysta\Tytul"
-          TopLeft="197.5,632.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Wprowadzenie Bycie artysta\Derived Column"
-          TopLeft="188,546" />
+          Size="130,42"
+          Id="Package\Wprowadzenie Bycie artysta\Artysta HD"
+          TopLeft="194,798" />
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie Bycie artysta\Sort 2"
           TopLeft="404,802" />
         <NodeLayout
-          Size="140,42"
-          Id="Package\Wprowadzenie Bycie artysta\Bycie Artysta"
-          TopLeft="262,1086" />
+          Size="154,42"
+          Id="Package\Wprowadzenie Bycie artysta\Derived Column"
+          TopLeft="188,546" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Wprowadzenie Bycie artysta\Lookup 5"
+          TopLeft="302,987" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie Bycie artysta\Sort 1"
+          TopLeft="125,266" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie Bycie artysta\Sort"
+          TopLeft="310,264" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Wprowadzenie Bycie artysta\Autorstwo"
+          TopLeft="302,52" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Wprowadzenie Bycie artysta\Merge"
+          TopLeft="127,355" />
+        <NodeLayout
+          Size="102,42"
+          Id="Package\Wprowadzenie Bycie artysta\Tytul"
+          TopLeft="197.5,632.5" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Wprowadzenie Bycie artysta\Lookup"
+          TopLeft="106,165" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Wprowadzenie Bycie artysta\przedstawienie"
+          TopLeft="194,716" />
         <NodeLayout
           Size="130,42"
           Id="Package\Wprowadzenie Bycie artysta\Aktrorstwo"
           TopLeft="90,51" />
         <NodeLayout
-          Size="108,42"
-          Id="Package\Wprowadzenie Bycie artysta\Merge"
-          TopLeft="127,355" />
+          Size="151,42"
+          Id="Package\Wprowadzenie Bycie artysta\Wynagrodzenie"
+          TopLeft="290,897" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Wprowadzenie Bycie artysta\Pobrac wynagrodzenie"
+          TopLeft="421,729" />
         <EdgeLayout
           Id="Package\Wprowadzenie Bycie artysta.Paths[Sort Output2]"
           TopLeft="457.5,844">
@@ -7749,66 +7782,7 @@ where [refTable].[IDPrzedstawienie] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\przedstawienie">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Przedstawienie]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\Lookup">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Aktor]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\Pobrac wynagrodzenie">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\Autorstwo">
+    design-time-name="Package\Wprowadzenie Bycie artysta\Bycie Artysta">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7867,6 +7841,19 @@ where [refTable].[IDPrzedstawienie] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie Bycie artysta\Autorstwo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie Bycie artysta\Tytul">
     <Properties>
       <Property>
@@ -7890,7 +7877,53 @@ where [refTable].[IDPrzedstawienie] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\Bycie Artysta">
+    design-time-name="Package\Wprowadzenie Bycie artysta\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Aktor]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie Bycie artysta\przedstawienie">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Przedstawienie]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie Bycie artysta\Aktrorstwo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7903,7 +7936,7 @@ where [refTable].[IDPrzedstawienie] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie Bycie artysta\Aktrorstwo">
+    design-time-name="Package\Wprowadzenie Bycie artysta\Pobrac wynagrodzenie">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8182,6 +8215,31 @@ where [refTable].[IDPrzedstawienie] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie teatrow\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Teatr ma przedstawienie">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Teatr ma przedstawienie\Wyciagniecie dat"
+          TopLeft="294,73" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Teatr ma przedstawienie\Wyciagniecie dat">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

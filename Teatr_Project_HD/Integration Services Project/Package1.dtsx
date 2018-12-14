@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/14/2018 11:21:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-H3NOO6H"
+  DTS:CreatorName="DESKTOP-H3NOO6H\wladi"
+  DTS:DTSID="{3FAC07C0-8F6D-4066-8A96-DFB2D33DF237}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{757DBB5C-6BF4-4E5A-81F3-60CA6E357831}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Czas"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6A8CB663-DBC2-4670-9057-FC6466CEFA66}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Czas"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DC50282E-E561-49D2-BBFD-172C81830502}"
+          SQLTask:SqlStatementSource="insert into Czas(Godzina) values (1);&#xA;insert into Czas(Godzina) values (2);&#xA;insert into Czas(Godzina) values (3);&#xA;insert into Czas(Godzina) values (4);&#xA;insert into Czas(Godzina) values (5);&#xA;insert into Czas(Godzina) values (6);&#xA;insert into Czas(Godzina) values (7);&#xA;insert into Czas(Godzina) values (8);&#xA;insert into Czas(Godzina) values (9);&#xA;insert into Czas(Godzina) values (10);&#xA;insert into Czas(Godzina) values (11);&#xA;insert into Czas(Godzina) values (12);&#xA;insert into Czas(Godzina) values (13);&#xA;insert into Czas(Godzina) values (14);&#xA;insert into Czas(Godzina) values (15);&#xA;insert into Czas(Godzina) values (16);&#xA;insert into Czas(Godzina) values (17);&#xA;insert into Czas(Godzina) values (18);&#xA;insert into Czas(Godzina) values (19);&#xA;insert into Czas(Godzina) values (20);&#xA;insert into Czas(Godzina) values (21);&#xA;insert into Czas(Godzina) values (22);&#xA;insert into Czas(Godzina) values (23);&#xA;insert into Czas(Godzina) values (24);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Inne"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{85C1F6B0-F92A-4CE2-AC59-8D75EF126052}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Inne"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DC50282E-E561-49D2-BBFD-172C81830502}"
+          SQLTask:SqlStatementSource="insert into Inne (Rezyser, Aktor) values ('Tak', 'Nie');&#xA;insert into Inne (Rezyser, Aktor) values ('Nie', 'Tak');&#xA;insert into Inne (Rezyser, Aktor) values ('Tak', 'Tak');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Smieci"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1E6FF5B3-A65E-422F-B7B8-4A888F067648}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Smieci"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DC50282E-E561-49D2-BBFD-172C81830502}"
+          SQLTask:SqlStatementSource="INSERT INTO Smieci VALUES ('informacja', 'gotówka');&#xA;INSERT INTO Smieci VALUES ('drzwiGlowne', 'karta');&#xA;INSERT INTO Smieci VALUES ('drzwiBoczne', 'gotowka');&#xA;INSERT INTO Smieci VALUES ('informacja', 'karta');&#xA;INSERT INTO Smieci VALUES ('drzwiGlowne', 'gotowka');&#xA;INSERT INTO Smieci VALUES ('drzwiBoczne', 'karta');" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="101,42"
+          Id="Package\Czas"
+          TopLeft="143,113" />
+        <NodeLayout
+          Size="100,42"
+          Id="Package\Inne"
+          TopLeft="260,113" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Smieci"
+          TopLeft="374,113" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
